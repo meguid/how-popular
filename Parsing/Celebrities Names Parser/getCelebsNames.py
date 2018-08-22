@@ -18,6 +18,7 @@ def getCelebsNames(cupSizes) :
         fullCelebsFile.write(celeb)
         fullCelebsFileNumbered.write(str(index) + ": " + celeb)
         index += 1
+    return sorted(list(fullCelebsList))
 
 getCelebsNames(getCelebsCupSizes())
 
