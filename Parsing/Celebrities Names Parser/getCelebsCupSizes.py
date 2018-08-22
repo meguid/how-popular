@@ -11,5 +11,3 @@ def getCelebsCupSizes() :
         cupSize = splittedUrls[i].split("\"",1)[0]
         celebsCupSizes.add(cupSize)
     return list(celebsCupSizes)
-
-print(getCelebsCupSizes())
