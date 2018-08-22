@@ -32,8 +32,13 @@ for celeb in celebs:
     if celeb not in celebsList:
         celebsList.add(celeb)
 
-for celeb in celebsList:
+for celeb in sorted(list(celebsList)):
     celeb_name = celeb.rstrip("\n\r")
-    celebsBiographyFile.write("\n\n" + celeb_name + "\n")
-    celebsBiographyFile.write(str(getBiographyByName(celeb_name)))
+    celebsBiographyFile.write("$$$ " + celeb_name + "\n")
+    biography = getBiographyByName(celeb_name)
+    for key, value in sorted(biography.iteritems(), key=lambda (k,v): (v,k)):
+        celebsBiographyFile.write(key + ' $ ')
+        celebsBiographyFile.write(str(value) + ' ')
+        celebsBiographyFile.write("\n")
+    celebsBiographyFile.write("\n")
 
