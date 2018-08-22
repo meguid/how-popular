@@ -9,6 +9,6 @@ Using Machine Learning to predict how popular would you be based on celebrities 
 - [x] Parsing celebrity biography
   - [x] Parsing celebrity biography by name
   - [x] Celebrities biography file
-- [ ] Body measurements Gradient Descent
-  - [ ] Celebrities body measurements matrix
+- [ ] Parse Body measurements data
+- [ ] Find popularity by name
 - [ ] More...
