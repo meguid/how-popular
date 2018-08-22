@@ -5,7 +5,7 @@ Using Machine Learning to predict how popular would you be based on celebrities 
 
 - [x] Parsing celebrities
 - [x] Parsing celebrities biography
-- [ ] Parsing Body measurements data
+- [ ] Parsing body measurements data
 - [x] Get popularity data
 - [ ] Apply Linear Regression to predict popularity
   - [ ] Modeling the relationship between cupsize and popularity
