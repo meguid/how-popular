@@ -24,7 +24,6 @@ for celeb in celebs:
     if celeb not in celebsList:
         celebsList.add(celeb)
 
-#popularity = {}
 celebPopularityFile = open("celebs-popularity.txt", "a+")
 celebPopularitySortedFile = open("celebs-popularity-sorted.txt", "a+")
 
@@ -33,10 +32,5 @@ print(sublist)
 for celeb in sublist:
     celeb_name = celeb.rstrip("\n\r")
     fansCount = getPopularityByName(celeb_name)
-#    popularity.update({ celeb_name : fansCount})
     celebPopularityFile.write(celeb_name + ' ' + str(fansCount) + "\n")
     print(celeb_name + ": " + str(fansCount))
-
-#for name, fans in reversed(sorted(popularity.iteritems(), key=lambda (k,v): (v,k))):
-#    celebPopularitySortedFile.write(name + ' ' + str(fans) + "\n")
-
