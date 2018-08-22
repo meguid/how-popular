@@ -10,5 +10,5 @@ Using Machine Learning to predict how popular would you be based on celebrities 
   - [x] Parsing celebrity biography by name
   - [x] Celebrities biography file
 - [x] Parse Body measurements data
-- [ ] Find popularity by name
+- [x] Find popularity by name
 - [ ] More...
