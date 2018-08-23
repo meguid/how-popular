@@ -55,6 +55,7 @@ def parseNamesIntoOneFile(cupSizes): # Step 3
         index += 1
     return sorted(list(fullCelebsList))
 
-cupsizes = getCupSizes() # Get the list of available cupsizes
-parseNamesByCupsize(cupSizes) # Parse celebrities usernames into files by cupsize
-celebs_names = parseNamesIntoOneFile(cupsizes) # Merge all the celebrities usernames into one file
+#cupsizes = getCupSizes() # Get the list of available cupsizes
+#parseNamesByCupsize(cupSizes) # Parse celebrities usernames into files by cupsize
+#celebs_names = parseNamesIntoOneFile(cupsizes) # Merge all the celebrities usernames into one file
+

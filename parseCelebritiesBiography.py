@@ -24,21 +24,22 @@ def getBiographyByName(celeb) :
         biography.update({tree.xpath('//div[@class="w33pc posl"]/text()')[0] : tree.xpath('//div[@class="w60pc posr"]/text()')})
     return biography
 
-celebsFile = open("celebs.txt", "r")
-celebsBiographyFile = open("celebs-biography.txt", "w")
-celebsList = set()
-celebs = celebsFile.readlines()
-for celeb in celebs:
-    if celeb not in celebsList:
-        celebsList.add(celeb)
+def parseBiographyData(celeb) :
+    celebsFile = open("celebs.txt", "r")
+    celebsBiographyFile = open("celebs-biography.txt", "w")
+    celebsList = set()
+    celebs = celebsFile.readlines()
+    for celeb in celebs:
+        if celeb not in celebsList:
+            celebsList.add(celeb)
 
-for celeb in sorted(list(celebsList)):
-    celeb_name = celeb.rstrip("\n\r")
-    celebsBiographyFile.write("$$$ " + celeb_name + "\n")
-    biography = getBiographyByName(celeb_name)
-    for key, value in sorted(biography.iteritems(), key=lambda (k,v): (v,k)):
-        celebsBiographyFile.write(key + ' $ ')
-        celebsBiographyFile.write(str(value) + ' ')
+    for celeb in sorted(list(celebsList)):
+        celeb_name = celeb.rstrip("\n\r")
+        celebsBiographyFile.write("$$$ " + celeb_name + "\n")
+        biography = getBiographyByName(celeb_name)
+        for key, value in sorted(biography.iteritems(), key=lambda (k,v): (v,k)):
+            celebsBiographyFile.write(key + ' $ ')
+            celebsBiographyFile.write(str(value) + ' ')
+            celebsBiographyFile.write("\n")
         celebsBiographyFile.write("\n")
-    celebsBiographyFile.write("\n")
 
