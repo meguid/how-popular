@@ -16,25 +16,30 @@ def getMeasurmentValues(cupSizes, measurment):
     cup = str(cupSizes.index(cupStr.lower())+1)
     return cup, bust, waist, hip
 
-def generateVectors():
+def popularityImproved(groupRate, fans):
+    max = 3500.0 / groupRate
+    sizingRate = max / 100
+    groupedData = int(int(fans)/groupRate)
+    sizedData = groupedData/ sizingRate
+    return sizedData
+
+def printData(file, data, fans):
+    file.write(data + ',' + str(fans) + "\n")
+
+def printTopData(file, data, fans):
+    if fans > 5: # arround top 200
+        file.write(data + ',' + str(fans) + "\n")
+
+def getTrainingSets():
     measurements, popularity = {}, {}
     measurements = readDictFromFile("celebs-measurements.txt")
     popularity = readDictFromFile("celebs-popularity.txt")
-    cupVectorFile = open("vector-cup.txt", "w")
-    bustVectorFile = open("vector-bust.txt", "w")
-    waistVectorFile = open("vector-waist.txt", "w")
-    hipVectorFile = open("vector-hip.txt", "w")
-    measurementVectorFile = open("vector-measurement.txt", "w")
     cupSizes = getCupSizes()
+    trainingData = []
     for name, measure in measurements.iteritems():
         if measure.count('-') == 2:
             if name in popularity.keys():
                 fans = popularity[name]
                 cup, bust, waist, hip = getMeasurmentValues(cupSizes, measure)
-                cupVectorFile.write(cup + ',' + fans + "\n")
-                bustVectorFile.write(bust + ',' + fans + "\n")
-                waistVectorFile.write(waist + ',' + fans + "\n")
-                hipVectorFile.write(hip + ',' + fans + "\n")
-                measurementVectorFile.write(cup + ',' + bust + ',' + waist + ',' + hip + ',' + fans + "\n")
-
-generateVectors()
+                trainingData.append((cup, bust, waist, hip, fans))
+    return trainingData
