@@ -32,14 +32,14 @@ Using Machine Learning to predict how popular would you be based on celebrities 
   ```
 
 ## Plots 
-**`We can easily see the pop culture effect on women body image through this charts.`** 
+  **`We can easily see the pop culture effect on women body image through this charts.`** 
 
 - Bust Size against popularity.
 <img src="/Assets/bust.png">
 
 - Bust Size against popularity. (Data for top 200 celebrities in number of fans)
 
- **`Every female celebrity in the 200 most popular has a range of 30:38 inches Bust size.`** 
+  **`Every female celebrity in the 200 most popular has a range of 30:38 inches Bust size.`** 
 
 <img src="/Assets/bust200.png">
 
@@ -48,7 +48,7 @@ Using Machine Learning to predict how popular would you be based on celebrities 
 
 - Waist Size against popularity. (Data for top 200 celebrities in number of fans)
 
- **`Every female celebrity in the 200 most popular has a range of 20:30 inches Waist size.`** 
+  **`Every female celebrity in the 200 most popular has a range of 20:30 inches Waist size.`** 
 
 <img src="/Assets/waist200.png">
 
@@ -57,11 +57,11 @@ Using Machine Learning to predict how popular would you be based on celebrities 
 
 - Hip Size against popularity. (Data for top 200 celebrities in number of fans)
 
- **`Kinda Every female celebrity in the 200 most popular has a range of 30:40 inches Hip size.`** 
+  **`Kinda Every female celebrity in the 200 most popular has a range of 30:40 inches Hip size.`** 
 
 <img src="/Assets/hip200.png">
 
- **`Nicki Minaj Breaking The Norm.`** 
+  **`Nicki Minaj Breaking The Norm.`** 
 
 <img src="/Assets/nicki.png">
 
@@ -70,6 +70,6 @@ Using Machine Learning to predict how popular would you be based on celebrities 
 
 - Cup Size against popularity. (Data for top 200 celebrities in number of fans)
 
- **`C is taking over.`** 
+  **`C is taking over.`** 
 
 <img src="/Assets/cup200.png">
