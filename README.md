@@ -37,7 +37,7 @@ Using Machine Learning to predict how popular would you be based on celebrities 
 - Bust Size against popularity.
 <img src="/Assets/bust.png">
 
-- Bust Size against popularity. (Data for top 200 celebrity in number of fans)
+- Bust Size against popularity. (Data for top 200 celebrities in number of fans)
 
  **`Every female celebrity in the 200 most popular has a range of 30:38 inches Bust size.`** 
 
@@ -46,7 +46,7 @@ Using Machine Learning to predict how popular would you be based on celebrities 
 - Waist Size against popularity.
 <img src="/Assets/waist.png">
 
-- Waist Size against popularity. (Data for top 200 celebrity in number of fans)
+- Waist Size against popularity. (Data for top 200 celebrities in number of fans)
 
  **`Every female celebrity in the 200 most popular has a range of 20:30 inches Waist size.`** 
 
@@ -55,7 +55,7 @@ Using Machine Learning to predict how popular would you be based on celebrities 
 - Hip Size against popularity.
 <img src="/Assets/hip.png">
 
-- Hip Size against popularity. (Data for top 200 celebrity in number of fans)
+- Hip Size against popularity. (Data for top 200 celebrities in number of fans)
 
  **`Kinda Every female celebrity in the 200 most popular has a range of 30:40 inches Hip size.`** 
 
@@ -68,7 +68,7 @@ Using Machine Learning to predict how popular would you be based on celebrities 
 - Cup Size against popularity.
 <img src="/Assets/cup.png">
 
-- Cup Size against popularity. (Data for top 200 celebrity in number of fans)
+- Cup Size against popularity. (Data for top 200 celebrities in number of fans)
 
  **`C is taking over.`** 
 
