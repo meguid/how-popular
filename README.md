@@ -1,5 +1,5 @@
 # how-popular
-Using Machine Learning to predict how popular would you be based on celebrities real data
+Using Machine Learning to predict how popular would you be based on your body measurements data compared to celebrities real data
 
 ## To-Do:
 
