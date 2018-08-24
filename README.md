@@ -8,7 +8,7 @@ Using Machine Learning to predict how popular would you be based on celebrities 
   - [x] Celebrities biography
   - [x] Body measurements
   - [x] Popularity
- - [x] Plotting Data
+- [x] Plotting Data
   - [x] Generate training sets as vectors
   - [x] Plotting celebrities data
   - [x] Plotting top 200 (in no. of fans) celebrities data
