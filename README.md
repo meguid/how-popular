@@ -30,7 +30,7 @@ Using Machine Learning to predict how popular would you be based on celebrities 
   sudo apt-get install python-lxml
   sudo pip install requests
   ```
-  
+
 ## Plots 
 **`We can easily see the pop culture effect on women body image through this charts.`** 
 
@@ -73,4 +73,3 @@ Using Machine Learning to predict how popular would you be based on celebrities 
  **`C is taking over.`** 
 
 <img src="/Assets/cup200.png">
-
