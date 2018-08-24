@@ -1,3 +1,5 @@
+from parseCelebrities import getCupSizes
+
 def readDictFromFile(filename):
     file = open(filename, "r")
     lines = file.readlines()
@@ -7,10 +9,11 @@ def readDictFromFile(filename):
         dictData.update({key : value.strip()})
     return dictData
 
-def getMeasurmentValues(measurment):
+def getMeasurmentValues(cupSizes, measurment):
     bustAndCup, waist, hip = measurment.split('-')
     bust = ''.join(c for c in bustAndCup if not c.isalpha())
-    cup = ''.join(c for c in bustAndCup if c.isalpha())
+    cupStr = ''.join(c for c in bustAndCup if c.isalpha())
+    cup = str(cupSizes.index(cupStr.lower())+1)
     return cup, bust, waist, hip
 
 def generateVectors():
@@ -22,11 +25,12 @@ def generateVectors():
     waistVectorFile = open("vector-waist.txt", "w")
     hipVectorFile = open("vector-hip.txt", "w")
     measurementVectorFile = open("vector-measurement.txt", "w")
+    cupSizes = getCupSizes()
     for name, measure in measurements.iteritems():
         if measure.count('-') == 2:
             if name in popularity.keys():
                 fans = popularity[name]
-                cup, bust, waist, hip = getMeasurmentValues(measure)
+                cup, bust, waist, hip = getMeasurmentValues(cupSizes, measure)
                 cupVectorFile.write(cup + ',' + fans + "\n")
                 bustVectorFile.write(bust + ',' + fans + "\n")
                 waistVectorFile.write(waist + ',' + fans + "\n")
