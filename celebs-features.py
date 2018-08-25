@@ -1,10 +1,10 @@
-from parseCelebrities import getCupSizes
+from celebs import getCupSizes
 
 cupSizes = getCupSizes()
 ethnicities = ['Asian', 'Asian/Indian', 'Black', 'Middle Eastern', 'Multiracial', 'White', 'OTHER']
 celebsBiographyFile = open("celebs-biography.txt", "r")
 celebsFeaturesFile = open("celebs-features.txt", "w+")
-celebsPopularityFile = open("celebs-popularity-sorted.txt", "r")
+celebsPopularityFile = open("celebs-popularity.txt", "r")
 
 def getMeasurmentValues(measurment):
     cup, bust, waist, hip = "","","",""
