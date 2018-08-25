@@ -25,22 +25,11 @@ def getPopularityData():
         if celeb not in celebsList:
             celebsList.add(celeb)
     celebPopularityFile = open("celebs-popularity.txt", "a+")
+    popularity = {}
     for celeb in sorted(list(celebsList)):
         celeb_name = celeb.rstrip("\n\r")
-        fansCount = getPopularityByName(celeb_name)
-        celebPopularityFile.write(celeb_name + ' ' + str(fansCount) + "\n")
-        print(celeb_name + ": " + str(fansCount))
-
-def sortNamesByPopularity() :
-    celebPopularitySortedFile = open("celebs-popularity-sorted.txt", "w")
-    celebsFile = open("celebs-popularity.txt", "r")
-    celebs = celebsFile.readlines()
-    celebsList = set()
-    popularity = {}
-    for celeb in celebs:
-        celebName, fans = celeb.split(' ')
-        fansCount = int(fans)
-        print(celebName, fansCount)
+        fansCount = getCelebrityFans(celeb_name)
         popularity.update({ celebName : fansCount})
+        print(celeb_name + ": " + str(fansCount))
     for name, fans in reversed(sorted(popularity.iteritems(), key=lambda (k,v): (v,k))):
-        celebPopularitySortedFile.write(name + ' ' + str(fans) + "\n")
+        celebPopularityFile.write(name + ' ' + str(fans) + "\n")

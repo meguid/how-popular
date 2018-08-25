@@ -41,7 +41,6 @@ def parseNamesByCupsize(cupsizes) :  # Step 2
 def parseNamesIntoOneFile(cupSizes): # Step 3
     fullCelebsList = set()
     fullCelebsFile = open("celebs.txt", "w")
-    fullCelebsFileNumbered = open("celebs_numbered.txt", "w")
     for cupsize in cupSizes:
         celebsFile = open("celebs_" + cupsize + ".txt", "r")
         celebs = celebsFile.readlines()
@@ -51,7 +50,6 @@ def parseNamesIntoOneFile(cupSizes): # Step 3
     index = 1
     for celeb in sorted(fullCelebsList):
         fullCelebsFile.write(celeb)
-        fullCelebsFileNumbered.write(str(index) + ": " + celeb)
         index += 1
     return sorted(list(fullCelebsList))
 
