@@ -79,6 +79,6 @@ Using Machine Learning to predict how popular would you be based on your body me
 
 - Ethnicity against popularity. (Data for top 200 celebrities in number of fans)
 
-  **`WHite domination?`** 
+  **`White domination?`** 
 
 <img src="/Assets/ethnicity200.png">
