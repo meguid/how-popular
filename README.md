@@ -8,11 +8,16 @@ Using Machine Learning to predict how popular would you be based on your body me
   - [x] Celebrities biography
   - [x] Body measurements
   - [x] Popularity
+- [x] Prediction
+  - [x] Calculating features impressions
+  - [x] Calculate Score
+  - [x] Calculate ranks
+  - [x] Compete with other celebrities
 - [x] Plotting Data
   - [x] Generate training sets as vectors
   - [x] Plotting celebrities data
   - [x] Plotting top 200 (in no. of fans) celebrities data
-- [ ] Linear Regression
+- [x] Linear Regression (so far not the best option for accurate results, still searching!!!)
 - [ ] Apply more examples using other celebrities data that we already parsed
 
 ## Requirements
