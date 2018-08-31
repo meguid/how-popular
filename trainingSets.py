@@ -1,4 +1,8 @@
+from predict import getScore
+
 celebsFeaturesFile = open("celebs-features.txt", "r")
+celebsPredectionsFile = open("celebs-prediction.txt", "w+")
+celebsPredectionsSortedFile = open("celebs-prediction-sorted.txt", "w+")
 
 cupData = open("TrainingSets/Cup/trainingCup.txt", "w+")
 cupDataTop = open("TrainingSets/Cup/trainingCupTop.txt", "w+")
@@ -15,6 +19,8 @@ bustDataTop = open("TrainingSets/Bust/trainingBustTop.txt", "w+")
 ethnicityData = open("TrainingSets/Ethnicity/trainingEthnicity.txt", "w+")
 ethnicityDataTop = open("TrainingSets/Ethnicity/trainingEthnicityTop.txt", "w+")
 
+celebsPredictions = {}
+
 def popularityImproved(groupRate, fans):
     max = 3500.0 / groupRate
     sizingRate = max / 100
@@ -26,13 +32,20 @@ def printData(file, data, fans):
     file.write(data + ',' + str(fans) + "\n")
 
 def printTopData(file, data, fans):
-    if fans > 5: # arround top 200
+    if fans > 5: # around top 200
         file.write(data + ',' + str(fans) + "\n")
 
 def printGeneral(file, topFile, data, fans):
     if data != "" :
         printData(file, data, popularityImproved(1,fans))
         printTopData(topFile, data, popularityImproved(1,fans))
+
+def printPrediction(name, cup, bust, waist, hip, fans):
+    if bust != "" and cup != "" and waist != "" and hip != "" :
+        measurement = str(cup) + " " + str(bust) + " " + str(waist) + " " + str(hip)
+        score = getScore(measurement)
+        celebsPredectionsFile.write(name + " " + str(score) + "\n")
+        celebsPredictions[name] = score
 
 lines = celebsFeaturesFile.readlines()
 for line in lines:
@@ -42,3 +55,8 @@ for line in lines:
     printGeneral(waistData, waistDataTop, waist, fans)
     printGeneral(hipData, hipDataTop, hip, fans)
     printGeneral(ethnicityData, ethnicityDataTop, ethnicity, fans)
+    printPrediction(name, cup, bust, waist, hip, fans)
+
+for name, prediction in reversed(sorted(celebsPredictions.iteritems(), key=lambda (k,v): (v,k))):
+    celebsPredectionsSortedFile.write(name + ' ' + str(prediction) + "\n")
+
