@@ -40,13 +40,39 @@ Using Machine Learning to predict how popular would you be based on your body me
   **`First run the prediction algorithm and enter your measurements.`** 
   ```
   python predict.py
+   ```
+
+  ```
   Please enter your body measurments in this order [Cup Bust Waist Hip]
   B 34 26 32
+  GOOO GIRL, You scored 59%. 
+  You're in the top 62% of all celebrities and ranked with propability higher than or equal to 
+  Beyonce Knowles, Kim Kardashian West, Ariana Grande, Amanda Bynes, and Jennifer Lopez
   ```
   
-  **`Your Results`** 
+  ```
+  Please enter your body measurments in this order [Cup Bust Waist Hip]
+  C 34 26 35
+  INCREDIBLE, You scored 84%. 
+  You're in the top 18% of all celebrities and ranked with propability higher than or equal to 
+  Miley Cyrus, Taylor Swift, Rihanna, Angelina Jolie, and Vanessa Hudgens
+  ```
+
+  ```
+  Please enter your body measurments in this order [Cup Bust Waist Hip]
+  C 34 24 34
+  OH MY G!!, You scored 100%. 
+  You're in the top 1% of all celebrities and ranked with propability higher than or equal to 
+  Selena Gomez, Miley Cyrus, Taylor Swift, Kristen Stewart, and Rihanna
+  ```
   
-  GOOO GIRL, You scored 59%. You're in the top 62% of all celebrities and ranked with propability higher than or equal to Beyonce Knowles, Kim Kardashian West, Ariana Grande, Amanda Bynes, and Jennifer Lopez
+  ```
+  Please enter your body measurments in this order [Cup Bust Waist Hip]
+  DDD 40 30 38
+  Ohh, You scored 9%. 
+  You're in the top 98% of all celebrities and ranked with propability higher than or equal to 
+  Adele, Vanessa Del Rio, Melissa Mccarthy, Billie Holiday, and Kathy Bates
+  ``` 
 
 ## Plots 
   **`We can easily see the pop culture effect on women body image through this charts.`** 
