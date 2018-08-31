@@ -35,6 +35,18 @@ Using Machine Learning to predict how popular would you be based on your body me
   sudo apt-get install python-lxml
   sudo pip install requests
   ```
+  
+## Usage
+  **`First run the prediction algorithm and enter your measurements.`** 
+  ```
+  python predict.py
+  Please enter your body measurments in this order [Cup Bust Waist Hip]
+  B 34 26 32
+  ```
+  
+  **`Your Results`** 
+  
+  GOOO GIRL, You scored 59%. You're in the top 62% of all celebrities and ranked with propability higher than or equal to Beyonce Knowles, Kim Kardashian West, Ariana Grande, Amanda Bynes, and Jennifer Lopez
 
 ## Plots 
   **`We can easily see the pop culture effect on women body image through this charts.`** 
