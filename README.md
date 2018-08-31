@@ -37,7 +37,7 @@ Using Machine Learning to predict how popular would you be based on your body me
   ```
   
 ## Usage
-  **`First run the prediction algorithm and enter your measurements.`** 
+
   ```
   python predict.py
    ```
