@@ -73,3 +73,12 @@ Using Machine Learning to predict how popular would you be based on your body me
   **`C is taking over.`** 
 
 <img src="/Assets/cup200.png">
+
+- Ethnicity against popularity.
+<img src="/Assets/ethnicity.png">
+
+- Ethnicity against popularity. (Data for top 200 celebrities in number of fans)
+
+  **`White domination?`** 
+
+<img src="/Assets/ethnicity200.png">
